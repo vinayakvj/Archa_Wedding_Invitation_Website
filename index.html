@@ -74,44 +74,44 @@
         bride: {
           name: "Indulekha",
           photo: "",
-          line: "[A short line about Indulekha: what she loves, what makes her laugh.]",
-          parents: "Daughter of [Mother's name] & [Father's name]",
+          line: "[About Indulekha]",
+          parents: "Daughter of [Parents' names]",
         },
         groom: {
           name: "Sanjay",
           photo: "",
-          line: "[A short line about Sanjay: what he loves, what makes him laugh.]",
-          parents: "Son of [Mother's name] & [Father's name]",
+          line: "[About Sanjay]",
+          parents: "Son of [Parents' names]",
         },
 
         story: [
           {
             title: "How we met",
-            when: "[Year] · [Place]",
+            when: "[Date]",
             photo: "",
             tone: "sage",
-            text: "[Write a few lines about the day your paths first crossed: where it was, and who noticed whom first.]",
+            text: "[Story]",
           },
           {
-            title: "Our first date",
-            when: "[Month Year]",
+            title: "First date",
+            when: "[Date]",
             photo: "",
             tone: "marigold",
-            text: "[The coffee, the long walk, the conversation that didn't want to end. A sentence or two is enough.]",
+            text: "[Story]",
           },
           {
-            title: "The proposal",
-            when: "[Month Year] · [Place]",
+            title: "Proposal",
+            when: "[Date]",
             photo: "",
             tone: "rust",
-            text: "[How the question was asked, and how quickly the answer came.]",
+            text: "[Story]",
           },
           {
-            title: "The wedding",
+            title: "Wedding",
             when: "18 April 2027",
             photo: "",
             tone: "bottle",
-            text: "And now, surrounded by the people we love most, we begin our forever. We can't wait to celebrate with you.",
+            text: "[Story]",
           },
         ],
 
@@ -122,9 +122,9 @@
             time: "[Time]",
             venue: "[Venue name]",
             address: "[Address]",
-            dress: "Sunshine yellows & marigold",
+            dress: "[Dress code]",
             colours: ["#F7B731", "#F0960E", "#3F633F"],
-            note: "An afternoon of turmeric, henna, music and laughter.",
+            note: "[Short note]",
           },
           {
             name: "Wedding Ceremony",
@@ -132,9 +132,9 @@
             time: "[Time]",
             venue: "[Venue name]",
             address: "[Address]",
-            dress: "Ivory, gold & traditional",
+            dress: "[Dress code]",
             colours: ["#FDF3E3", "#9A7339", "#7A2E05"],
-            note: "The muhurtham and sacred rituals. Please be seated a little early.",
+            note: "[Short note]",
           },
           {
             name: "Reception",
@@ -142,9 +142,9 @@
             time: "[Time]",
             venue: "[Venue name]",
             address: "[Address]",
-            dress: "Bottle green & jewel tones",
+            dress: "[Dress code]",
             colours: ["#1F4D2E", "#7A2E05", "#F7B731"],
-            note: "Dinner, toasts and dancing into the night.",
+            note: "[Short note]",
           },
         ],
 
@@ -180,8 +180,7 @@
           name: "[Venue name]",
           address: "[Street address, City, State, PIN]",
           mapQuery: "", // optional: exact Google Maps search text, else name + address
-          notes:
-            "[Parking, nearest station or landmark, anything guests should know.]",
+          notes: "[Parking / landmark]",
         },
 
         rsvp: {
@@ -192,33 +191,11 @@
           mode: "formspree",
         },
 
-        // Sample wishes: replace with real ones from your guests.
+        // Wishes from guests
         wishes: [
-          {
-            text: "Two of the kindest people we know, finally under one roof. Wishing you a lifetime of laughter and filter coffee mornings.",
-            name: "[Guest name]",
-            rel: "College friends",
-          },
-          {
-            text: "May your home always be full of jasmine, music and the people you love.",
-            name: "[Guest name]",
-            rel: "Family",
-          },
-          {
-            text: "Watching you two together, we knew. Here's to every adventure ahead!",
-            name: "[Guest name]",
-            rel: "Cousins",
-          },
-          {
-            text: "Wishing you patience on the hard days and joy on all the others. All our blessings.",
-            name: "[Guest name]",
-            rel: "Aunt & Uncle",
-          },
-          {
-            text: "Save us a spot on the dance floor. So happy for you both!",
-            name: "[Guest name]",
-            rel: "Work friends",
-          },
+          { text: "[Wish]", name: "[Name]", rel: "[Relation]" },
+          { text: "[Wish]", name: "[Name]", rel: "[Relation]" },
+          { text: "[Wish]", name: "[Name]", rel: "[Relation]" },
         ],
       };
     </script>
@@ -2108,8 +2085,8 @@
         </svg>
         <div class="wrap">
           <div class="head reveal">
-            <p class="eyebrow">Counting down to forever</p>
-            <h2 class="title" id="cd-title">Until we say “I do”</h2>
+            <p class="eyebrow">Countdown</p>
+            <h2 class="title" id="cd-title">Save the Date</h2>
           </div>
           <div
             class="count reveal"
@@ -2131,7 +2108,7 @@
       <section class="band" id="couple" aria-labelledby="couple-title">
         <div class="wrap">
           <div class="head reveal">
-            <p class="eyebrow">The bride &amp; the groom</p>
+            <p class="eyebrow">Bride &amp; Groom</p>
             <h2 class="title" id="couple-title">Meet the Couple</h2>
             <div class="divider" aria-hidden="true">
               <svg><use href="#sparkle" /></svg
@@ -2147,7 +2124,7 @@
       <section class="band alt" id="story" aria-labelledby="story-title">
         <div class="wrap">
           <div class="head reveal">
-            <p class="eyebrow">How it all began</p>
+            <p class="eyebrow">Us</p>
             <h2 class="title" id="story-title">Our Story</h2>
           </div>
           <ol class="timeline" id="timeline"></ol>
@@ -2160,10 +2137,6 @@
           <div class="head reveal">
             <p class="eyebrow">Our wedding celebration</p>
             <h2 class="title" id="events-title">The Celebrations</h2>
-            <p class="lede">
-              Three gatherings, one joyful weekend. Tap a card to save it to
-              your calendar.
-            </p>
           </div>
           <div class="events" id="eventList"></div>
         </div>
@@ -2173,14 +2146,10 @@
       <section class="band alt" id="gallery" aria-labelledby="gallery-title">
         <div class="wrap">
           <div class="head reveal">
-            <p class="eyebrow">Moments together</p>
+            <p class="eyebrow">Photos</p>
             <h2 class="title" id="gallery-title">Gallery</h2>
           </div>
           <div class="gallery" id="galleryGrid"></div>
-          <p class="swap-note" id="swapNote">
-            Placeholder tiles: add your photos in the <b>gallery</b> list in the
-            config at the top of the file.
-          </p>
         </div>
       </section>
 
@@ -2225,7 +2194,7 @@
       <section class="band" id="venue" aria-labelledby="venue-title">
         <div class="wrap">
           <div class="head reveal">
-            <p class="eyebrow">Where to find us</p>
+            <p class="eyebrow">Location</p>
             <h2 class="title" id="venue-title">Venue &amp; Directions</h2>
           </div>
           <div class="venue reveal">
@@ -2360,7 +2329,7 @@
                 ><textarea
                   id="f-msg"
                   name="message"
-                  placeholder="Your wishes, a memory, or a song request…"
+                  placeholder="Your message"
                 ></textarea>
               </div>
               <button class="btn submit" type="submit" id="rsvpSubmit">
@@ -2383,7 +2352,7 @@
       <section class="band" id="wishes" aria-labelledby="wishes-title">
         <div class="wrap">
           <div class="head reveal">
-            <p class="eyebrow">With love from you</p>
+            <p class="eyebrow">From family &amp; friends</p>
             <h2 class="title" id="wishes-title">Blessings &amp; Wishes</h2>
           </div>
           <div class="wishes" id="wishList"></div>
@@ -2406,7 +2375,6 @@
       </p>
       <p class="fdate" data-c="event.dateShort">18 · 04 · 2027</p>
       <span class="tag" data-c="couple.hashtag">#IndulekhaWedsSanjay</span>
-      <small>Made with love for our family and friends</small>
     </footer>
 
     <script>
@@ -2611,7 +2579,7 @@
             $("#cd-note").textContent =
               Date.now() - target < 864e5
                 ? "Today is the day!"
-                : "Happily married. Thank you for celebrating with us.";
+                : "Just married!";
           }
           const d = Math.floor(ms / 864e5);
           ms %= 864e5;
@@ -2769,7 +2737,6 @@
     <button class="tile reveal" type="button" data-i="${i}" style="aspect-ratio:${esc(g.ratio || "1/1")}" aria-label="Open photo: ${esc(g.alt)}">
       ${photo(g.photo, g.alt, g.tone, `Photo ${i + 1}`)}</button>`,
         ).join("");
-        if (G.every((g) => g.photo)) $("#swapNote").hidden = true;
         const lb = $("#lightbox");
         let cur = 0,
           lastFocus = null;
@@ -2910,8 +2877,8 @@
           const first = name.value.trim().split(" ")[0];
           $("#thanksMsg").textContent =
             data.get("attending") === "no"
-              ? `We'll miss you, ${first}. Thank you for letting us know, and for your love and blessings.`
-              : `${first}, we can't wait to celebrate with you on ${C.event.dateLong}.`;
+              ? `Sorry you can't make it, ${first}. Thanks for letting us know.`
+              : `See you on ${C.event.dateLong}, ${first}!`;
           form.hidden = true;
           $("#thanks").hidden = false;
           $("#thanks").focus();
